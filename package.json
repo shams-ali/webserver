@@ -1,0 +1,25 @@
+{
+  "name": "webserver",
+  "version": "0.0.0",
+  "description": "webserver",
+  "author": "fuzzyRainbow",
+  "main": "server.js",
+  "engines": {
+    "node": "6.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.4.0",
+    "aws-sdk-promise": "0.0.2",
+    "nodal": "0.10.0"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5"
+  },
+  "scripts": {
+    "test": "mocha ./test/runner.js",
+    "start": "node cluster.js",
+    "worker": "node worker.js"
+  },
+  "private": true
+}
